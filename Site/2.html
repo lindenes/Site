@@ -1,0 +1,203 @@
+<!doctype html>
+<title>Example</title>
+<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 20% 70% 10%;  
+  grid-template-columns: 20% 40% 40%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  
+  }  
+  #pageFooter {
+  grid-area: footer;
+  font-size:20px;
+    display: grid;
+  grid-template-columns: repeat(7, 12%);
+  grid-gap: 10px;
+  margin: 0;
+  padding-left:10%;
+  border-top:solid black;
+}
+
+@media all and (max-width: 800px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav";
+    grid-template-rows: 100px 1fr 70px 1fr 70px;  
+    grid-template-columns: 100%;
+ }
+}
+header, article, nav, div {
+  padding: 1.2em;
+  background: white;
+  }
+  #pageHeader {
+  grid-area: header;
+  border-bottom:solid black;
+  position:fixed;
+  width:100%;
+}
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  } 
+  .headerGrid{
+    display: grid;
+  grid-template-areas: 
+    "logo Actions Search Bron location";
+  grid-template-rows: 70px;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 10px;
+  margin: 0;
+  justify-content: center;
+
+  }
+  .logoImg{
+      width:70px;
+      
+  }
+  .Divlogo{
+      grid-area:logo;
+    
+  }
+  .DivActions{
+      grid-area:Actions
+  }
+  .DivSearch{
+      grid-area:Search;
+      
+  }
+  .DivBron{
+      grid-area:Bron;
+  }
+  .DivLoc{
+    grid-area:location;
+  }
+  article{
+    font-size:20px;
+  }
+  #siteAds{
+    font-size:20px;
+  }
+</style>
+<body>
+  <header id="pageHeader">
+      <div class="headerGrid">
+        <div class="Divlogo">
+            <img class="logoImg" src="5.jpeg">
+          </div>
+          <div class="DivActions">
+              акции
+    
+          </div>
+          <div class="DivSearch">
+              <input>
+              <button>Поиск</button>
+    
+          </div>
+          <div class="DivBron">
+              бронирование
+    
+          </div>
+          <div class="DivLoc">
+            <a href="2.html">локации</a>
+          </div>
+      </div>
+  </header>
+  <article id="mainArticle">
+    <div> Наименование и адрес локации: </div>
+    <div> Туристическая база "Озеро Красилово", Косихинский район, с. Озеро-Красилово, ул. Пушкина д.1 </div>
+    <div> Зоны локации: </div>
+
+<div>
+Шатер - 2 шт.
+Вместимость - до 5 чел
+500 р/час
+</div>
+<div>
+Летний домик- 5 шт
+Вместимость - до 10 чел
+300 р/час
+</div>
+<div>
+Беседка - 10 шт
+Вместимость - до 5 чел
+200 р/час
+</div>
+<div>
+Пирс у озера -  1 шт
+Вместимость - до 15 чел
+200 р/час
+</div>
+<div>
+Профессиональная фотостудия 1 шт
+Вместимость - до 10 чел
+300 р/час
+</div>
+
+          </article>
+  
+  <nav id="mainNav">
+    Алтайский край
+<img style="width:400px" src="17.jpeg">
+  </nav>
+  
+  <div id="siteAds">
+  <div> Наименование и адрес локации:</div>
+  <div>Наименование и адрес локации: Спа-отель "Мечта", г. Барнаул, Правобережный тракт 45</div>
+  <div>Зоны локации:</div>
+
+<div>
+Пирс у реки 1 шт
+Вместимость - до 15 чел
+200 р/час
+</div>
+<div>
+Яхт-клуб - 1 шт.
+Вместимость - до 5 чел
+500 р/час
+</div>
+<div>
+Беседка - 10 шт
+Вместимость - до 5 чел
+200 р/час
+</div>
+<div>
+Ресторан - 1 шт.
+Вместимость - до 5 чел
+500 р/час
+</div>
+<div>
+Профессиональная фотостудия 1 шт
+Вместимость - до 10 чел
+300 р/час
+
+</div>  
+
+  </div>
+  <footer id="pageFooter">
+    <a href="index.html">Home</a>
+  <a href="#">Login</a>
+  <a href="#">Sign up </a>
+  <a href="#">Contact </a>
+  <a href="#">News </a>
+  <a href="#">Return</a>
+  <a href="#">Feedback</a>
+</footer>
+</body>
+</html>
