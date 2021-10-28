@@ -1,0 +1,348 @@
+<!doctype html>
+<title>Example</title>
+<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "main main main"
+    "Promotion Promotion Promotion"
+    "TwoForms TwoForms TwoForms"
+    "footer footer footer";
+  grid-template-rows: 150px 1200px 2000px 500px 90px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  
+  }
+header, footer, article, nav, div {
+  padding: 20px;
+  background:white;
+}
+.TwoForms{
+    grid-area:TwoForms;
+    font-size:20px;
+    display: grid;
+  grid-template-areas: 
+    "FirstForm"
+    "SecondForm";
+  grid-template-rows: 300px;
+  grid-template-columns:200px;
+  grid-gap: 10px;
+  margin: 0;
+justify-content: center;
+}
+.FirstForm{
+    grid-area:FirstForm;
+    
+}
+.SecondForm{
+    grid-area:SecondForm;
+}
+#pageHeader {
+  grid-area: header;
+  border-bottom:solid black;
+  position:fixed;
+  width:100%;
+}
+#pageFooter {
+  grid-area: footer;
+  font-size:20px;
+    display: grid;
+  grid-template-columns: repeat(7, 12%);
+  grid-gap: 10px;
+  margin: 0;
+  padding-left:10%;
+  border-top:solid black;
+}
+.Promotion{
+    font-size:20px;
+    grid-area:Promotion;
+    display: grid;
+  grid-template-areas: 
+    "FirstPromotionImg FirstPromotionInfo"
+    "SecondPromotionImg SecondPromotionInfo"
+    "ThirdPromotionImg ThirdPromotionInfo";
+  grid-template-rows: 750px 650px;
+  grid-template-columns: 40% 60%;
+  grid-gap: 10px;
+  margin: 0;
+}
+.SecondPromotionImg{
+    grid-area:SecondPromotionImg;
+}
+.SecondPromotionInfo{
+    grid-area:SecondPromotionInfo;
+}
+.ThirdPromotionImg{
+   
+    grid-area:ThirdPromotionImg;
+}
+.ThirdPromotionInfo{
+    grid-area:ThirdPromotionInfo;
+}
+#pageMain { 
+  grid-area: main;   
+  }
+  .logoImg{
+      width:70px;
+      
+  }
+  .headerGrid{
+    display: grid;
+  grid-template-areas: 
+    "logo Actions Search Bron location";
+  grid-template-rows: 70px;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 10px;
+  margin: 0;
+  justify-content: center;
+
+  }
+  .Divlogo{
+      grid-area:logo;
+    
+  }
+  .DivActions{
+      grid-area:Actions
+  }
+  .DivSearch{
+      grid-area:Search;
+      
+  }
+  .DivBron{
+      grid-area:Bron;
+  }
+  .DivLoc{
+    grid-area:location;
+  }
+  #pageMain{
+    display: grid;
+  grid-template-areas: 
+    "pageMain_Bron PageMain_Img"
+    "pageMain_OurCompany PageMain_OurCompany_Img"
+    "PromotionFirst_Img PromotionFirst";
+  grid-template-rows: 500px 650px;
+  grid-template-columns: 75% 25%;
+  grid-gap: 10px;
+  margin: 0;
+  }
+  .PageMain_Img{
+      grid-area:PageMain_Img;
+  }
+  .pageMain_Bron{
+      grid-area:pageMain_Bron;
+  }
+  .pageMain_OurCompany{
+      grid-area:pageMain_OurCompany;
+  }
+  .PageMain_OurCompany_Img{
+      grid-area:PageMain_OurCompany_Img;
+  }
+ .PageMain_SearchForm{
+     grid-area:PageMain_SearchForm;
+     justify-content: center;
+     display: grid;
+     
+    
+     
+ }
+ .PromotionFirst{
+     grid-area:PromotionFirst;
+ }
+ .PromotionFirst_Img{
+     grid-area:PromotionFirst_Img;
+ }
+</style>
+<body>
+  <header id="pageHeader">
+      <div class="headerGrid">
+        <div class="Divlogo">
+            <img class="logoImg" src="5.jpeg">
+          </div>
+          <div class="DivActions">
+              акции
+    
+          </div>
+          <div class="DivSearch">
+              <input>
+              <button>Поиск</button>
+    
+          </div>
+          <div class="DivBron">
+              бронирование
+    
+          </div>
+          <div class="DivLoc">
+            <a href="2.html">локации</a>
+          </div>
+      </div>
+  </header>
+  <div id="pageMain">
+      <div class="pageMain_Bron">
+        <h1>Предоставляем услуги для организации фото и видеосъемок.</h1>
+        <h3>Главная цель компании – сохранить самые яркие моменты жизни клиентов на долгие годы. 
+            Клиенты компании «Фокус» имеют возможность забронировать одну из предоставленных локаций для организации фото и видеосъемок. Помимо аренды, компания предоставляет широкий спектр дополнительных услуг, таких как: услуги фотографов, предоставление реквизита для съемок, такси и т.д.   
+            Чтобы воспользоваться услугами компании необходимо: </h3>
+            <h2>Как воспользоваться нашими услугами?</h2>
+            <ul>
+                <li>
+                    Выбрать дату и время съемки;
+                </li>
+                <li>
+                    Выбрать количество участников;
+                </li>
+                <li>
+                    Выбрать желаемую локацию для съемки, соответствующую условиям выше;
+                </li>
+                <li>
+                    Зарезервировать конкретные зоны на территории выбранной локации;
+                </li>
+                <li>
+                    Определить перечень дополнительных услуг;
+                </li>
+                <li>
+                    Оформить заказ.
+                </li>
+            </ul>
+      </div>
+      <div class="PageMain_Img">
+          <img src="5.jpeg">
+      </div>
+      <div class="pageMain_OurCompany">
+          <h1>
+            Девиз компании «Фокус»: Сделай жизнь ярче!
+          </h1>
+          <h2>
+            У нас Вы сможете подобрать подходящий зал для Вашей фотосессии, приобрести подарочные сертификаты и даже сделать съёмку с нашим фотографом! 
+            В наших студиях современное осветительное оборудование с множеством светоформирующих насадок, оригинальные декорации, разнообразный реквизит и большой опыт наших сотрудников.
+          </h2>
+          <h3>Отзывы:</h3>
+          <div>
+            Алина:
+
+            Спасибо большое! Локация "Черная жемчужина" просто супер! Все в бурных эмоциях, фото получились просто огонь!
+          </div>
+          <div>
+            Марина: 
+
+Долго думала как отпразновать годовщину свадьбы. Увидела фото ваших локаций и влюбилась!
+Отлично провели время с мужем, сделали кучу фото для инстаграмма и даже распечатали несколько на память)
+          </div>
+          <div>
+            Алена и Надя:
+
+Всё очень понравилось. 
+Воспользовались с девочками услугами вашего фотографа Ильи, теперь фотаемся только у него!
+          </div>
+          <div>
+            Наталия: 
+            Уже не первый раз устраиваю себе праздник, организуя фотосессию в ваших локациях. Не дорого, а эмоций на весь день
+          </div>
+      </div>
+      <div class="PageMain_OurCompany_Img">
+        <img src="5.jpeg">
+    </div>
+    
+  </div>
+  <div class="Promotion">
+      <div class="FirstPromotionImg">
+          <img src="promotion1.jpg">
+
+      </div>
+      <div class="FirstPromotionInfo"> 
+        Headline:
+        Скидка до 60%. За заказ зоны (до 5 человек) в локации «Черная жемчужина»
+        <br>
+        Body:
+        Устали от городского шума, хотите провести фотосессию за городом в живописной локации? <br>Заказывайте место в локации «Черная жемчужина». 
+        Здесь вас ждет настоящая пиратская шхуна с настоящими пиратами! Фото будут просто огонь!
+        <br>
+        Заказ от 3 до 5 человек:
+        — Скидка 40% на аренду при заказе в будний день
+        <br>
+        Заказ от 3 до 5 человек + услуги фотографа:
+        — Скидка 55% на аренду при заказе в будний день
+        <br>
+        
+        Купон действует в будние дни при наличии свободных мест
+      </div>
+      <div class="SecondPromotionImg">
+        <img src="promotion2.jpg">
+
+      </div>
+      <div class="SecondPromotionInfo">
+          
+Headline:<br>
+Скидка до 51% при заказе услуг фотографа и использовании реквизита локации. Уютное место для организации детской фото-видео съемки «Поляна сказок»
+<br>
+Body:<br>
+Локация «Поляна сказок» расположена в живописной загородной местности на берегу чистого озера.<br> Есть места для организации фотосъемок как на открытом воздухе, <br>так и под навесом с профессиональным оборудованием и реквизитом.
+<br>
+Купон действует на следующие виды услуг:
+<br>
+— Скидка 51% для аренды зоны в локации «Поляна сказок» при условии заказа услуг фотографа
+<br>
+Преимущества заказа именно этой локации:<br>
+— безопасность (территория локации является частной и охраняется);<br>
+— мало людей (площадь — 200 кв. м);<br>
+— защита от насекомых (территория кемпинга обработана от клещей);<br>
+— обустроенный тематический лагерь, в котором можно сфотографироваться с любимыми персонажами сказок
+<br>
+Обязательна предварительная запись по телефону.
+
+      </div>
+      <div class="ThirdPromotionImg">
+          <img src="promotion3.jpg">
+
+      </div>
+      <div class="ThirdPromotionInfo">
+        Headline:<br>
+        Скидка до 25%. Закажи праздник "Под ключ"<br>
+        
+        Body:<br>
+        При выборе локации для 5 человек и больше, а также при заказе всех дополнительных услуг можно очень неплохо сэкономить!<br>
+        
+        
+        Купон действует на следующие виды услуг:<br>
+        
+        — Скидка 25% для органицации комплексного праздника для группы от 10 человек.<br>
+        — Скидка 10% для органицации комплексного праздника для группы от 5 человек.<br>
+        
+        Обязательна предварительная запись по телефону.
+      </div>
+
+  </div>
+  <div class="TwoForms">
+      <div class="FirstForm">
+          <form>
+              Выбор региона
+              <input>
+              Дата и время съемки
+              <input>
+              Количество участников
+              <input>
+              <button>Поиск</button>
+          </form>
+
+      </div>
+      <div class="SecondForm">
+        <form>
+            Ваш емаил
+            <input>
+            <button>Подписка</button>
+        </form>
+      </div>
+
+  </div>
+  <footer id="pageFooter">
+      <a href="index.html">Home</a>
+    <a href="#">Login</a>
+    <a href="#">Sign up </a>
+    <a href="#">Contact </a>
+    <a href="#">News </a>
+    <a href="#">Return</a>
+    <a href="#">Feedback</a>
+ </footer>
+</body>
