@@ -1,0 +1,16 @@
+.locations {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.zone-select {
+    height: 60px;
+}
+
+.locations-wrapper {
+    display: flex;
+    align-items: center;
+}

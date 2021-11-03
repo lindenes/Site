@@ -1,0 +1,66 @@
+.wrapper-inside-form {
+    display: grid;
+    grid-template-columns: 30% 20%;
+    grid-template-areas: 'left-side right-side' 'bottom-side bottom-side';
+    grid-gap: 30px;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-wrapper label {
+    color: black;
+    width: 80%;
+}
+
+.price {
+    color: black;
+}
+
+.left-side {
+    grid-area: left-side;
+}
+
+.text-area {
+    resize: none;
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+    border: solid #bc432e 1px;
+}
+
+.text-area:focus {
+    box-shadow: 0 0 10px rgba(255, 47, 0, 0.4);
+}
+
+.select-wrapper {
+    margin: 20px 0 0 0;
+}
+
+.select {
+    border: solid #bc432e 1px;
+    outline: none;
+    padding: 5px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    grid-area: right-side;
+}
+
+.bottom-side {
+    grid-area: bottom-side;
+}
